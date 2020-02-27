@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Graham Bradford Schedule</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		<div>
+			<input type="text" id='clock' autofocus>
+			<button id="gsch" onclick='getsch()'>Get Schedule</button>
+		</div>
+	</body>
+	<script>
+		function getsch(){
+			var x = document.getElementById('clock').value;
+			var xx = x + ".html";
+			window.open(xx);
+		}
+		var input = document.getElementById("clock");
+		input.addEventListener("keyup", function(event){
+			if (event.keyCode === 13){
+				event.preventDefault();
+				document.getElementById("gsch").click();
+				}
+			});
+	</script>
+</html>
