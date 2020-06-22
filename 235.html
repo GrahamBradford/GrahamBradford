@@ -1,0 +1,20 @@
+<html>
+                    <head>
+                    <link rel="stylesheet" type="text/css" href="results.css"/>
+                    </head>
+                    <body>
+                    <div>
+                    <h1 id="date"></h1>
+                    <h1>Brian Drehmer</h1>
+                    <p>M Sunday 06/28/2020 7am-7pm Shift Mechanic </p><p>M Monday 06/29/2020 7am-7pm Shift Mechanic </p><p>M Tuesday 06/30/2020 7am-7pm Shift Mechanic </p><p>M Wednesday 07/01/2020 7am-7pm Shift Mechanic </p><p>M Thursday 07/02/2020 7am-7pm Shift Mechanic </p><p>M Friday 07/03/2020 7am-7pm Shift Mechanic </p>
+                    </div>
+                    </body>
+                    <script>
+                    var n = new Date();
+                    var y = n.getFullYear();
+                    var m = n.getMonth() + 1;
+                    var d = n.getDate();
+                    document.getElementById("date").innerHTML = "Todays date " + m + "/" + d + "/" + y;
+                    </script>
+                    </html>
+                    
